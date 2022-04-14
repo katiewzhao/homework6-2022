@@ -5,13 +5,13 @@ window.addEventListener("load", function() {
 	video.autoplay = false
 	video.loop = false
 	console.log("The current volume is " + video.volume)
-	document.querySelector("#volume").innerHTML = video.volume * 100 + "%"
 });
 
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video")
 	video.play()
 	document.querySelector("#volume").innerHTML = video.volume * 100 + "%"
+	console.log("The current volume is " + video.volume)
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
